@@ -1,4 +1,4 @@
-
+import PricingCard from "./PricingCard.jsx";
 
 function Pricing() {
     return (
@@ -16,7 +16,44 @@ function Pricing() {
                 <button className="bg-zinc-600 rounded-full text-white py-2 px-6">Monthly</button>
                 <button className=" text-gray-400 py-2 px-6">Yearly</button>
             </div>
+            <div className="flex flex-row">
+                <PricingCard
+                title="Free"
+                description="Everything you need to supercharge your productivity."
+                price="0"
+                features={["20 design generations/month",
+                           "Low-res downloads",
+                           "Basic style presets",
+                           "Limited customization options",]}
+                />
+                <PricingCard
+                title="Pro"
+                description="Unlock a new level of your personal productivity."
+                price="17"
+                features={["Everything in Free",
+                    "Enigma AI",
+                    "Unlimited design generations",
+                    "Custom Themes",
+                    "High-resolution exports",
+                    "Custom Extensions",
+                    "Developer Tools",
+                ]} 
+                highlighted={true}
+                />
+                <PricingCard
+                title="Team"
+                description="Everything you need to supercharge your productivity."
+                price="37"
+                features={["Everything in Free",
+                    "Unlimited Shared Commands",
+                    "Unlimited Shared Quicklinks",
+                    "Priority support",
+                ]} 
+                />
+            </div>
             
+
+
         </div>
         </section>
     )

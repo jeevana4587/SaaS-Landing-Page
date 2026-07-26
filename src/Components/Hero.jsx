@@ -1,3 +1,5 @@
+import { Fragment } from "react";
+
 function Hero() {
 
     const stats=[
@@ -68,8 +70,8 @@ function Hero() {
                     {/*Stats*/}
                     <div className="flex w-full max-w-7xl mx-auto py-8 ">
                         {stats.map((stat,index) =>(
-                            <>
-                            <div key={stat.label}  className={` flex flex-1 flex-col items-center px-8 `}>
+                            <Fragment key={stat.label}>
+                            <div className={` flex flex-1 flex-col items-center px-8 `}>
                                 <p className="text-orange-500 text-lg">{stat.label}</p>
                                 <h2 className="text-white text-5xl font-medium mt-2">{stat.number}</h2>
 
@@ -77,7 +79,7 @@ function Hero() {
                             {index !== stats.length - 1 && (
                             <div className="w-px h-20 bg-zinc-800 self-center"></div>
                             )}
-                            </> 
+                            </Fragment> 
                         ))}
                     </div>
                 </div>
