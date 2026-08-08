@@ -1,3 +1,9 @@
+import { FaTwitter } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaGoogle } from "react-icons/fa";
+
+
 function Footer() {
     return (
         <section className="py-16 bg-black">
@@ -37,10 +43,10 @@ function Footer() {
                 <div className="flex justify-between">
                     <p className="text-white text-sm">© 2024 All Right Reserved.</p>
                     <div className="flex gap-2">
-                       <div className="w-5 h-5 rounded-full border border-orange-500"></div>
-                       <div className="w-5 h-5 rounded-full border border-orange-500"></div>
-                       <div className="w-5 h-5 rounded-full border border-orange-500"></div>
-                       <div className="w-5 h-5 rounded-full border border-orange-500"></div>
+                       <div className="w-5 h-5 flex items-center justify-center rounded-full border border-orange-500"><FaFacebookF size={12} className="text-orange-500" /></div>
+                       <div className="w-5 h-5 flex items-center justify-center rounded-full border border-orange-500"><FaGithub size={12} className="text-orange-500 text-sm"  /></div>
+                       <div className="w-5 h-5 flex items-center justify-center rounded-full border border-orange-500"><FaTwitter size={12} className="text-orange-500 text-sm" /></div>
+                       <div className="w-5 h-5 flex items-center justify-center rounded-full border border-orange-500"><FaGoogle size={12} className="text-orange-500 text-sm" /></div>
                     </div>
 
                 </div>

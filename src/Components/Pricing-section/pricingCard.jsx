@@ -1,3 +1,6 @@
+import { Check } from 'lucide-react';
+
+
 function PricingCard ({title,description,price,features,highlighted}) {
     return (
         <div className={`w-96 rounded-3xl p-8 flex flex-col text-left border ${highlighted
@@ -16,7 +19,7 @@ function PricingCard ({title,description,price,features,highlighted}) {
             <div className="flex flex-col gap-3 ">
               {features.map((feature, index) => (
                 <div key={index}  className="flex gap-2 text-white">
-                    <span>✓</span>
+                    <span className="w-5 h-5 rounded-full border border-white flex items-center justify-center"><Check size={12} className="text-white"/></span>
                     <p>{feature}</p>
                 </div>
                ))}
