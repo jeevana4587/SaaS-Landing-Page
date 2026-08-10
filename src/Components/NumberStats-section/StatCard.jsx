@@ -2,7 +2,7 @@ import Connector from "./Connector.jsx"
 
 const StatCard = ({ number, title, description, avatars }) => {
     return (
-        <div className="flex flex-col w-full gap-1 ">
+        <div className="flex flex-col w-full gap-1 min-w-0 ">
             <h1 className="text-6xl font-semibold text-white">{number}</h1>
             <h2 className="mt-3 text-lg font-medium text-white">{title}</h2>
             <p className="mt-1 text-sm text-gray-400">{description}</p>

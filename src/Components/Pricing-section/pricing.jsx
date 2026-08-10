@@ -16,7 +16,7 @@ function Pricing() {
                 <button className="bg-zinc-600 rounded-full text-white py-2 px-6">Monthly</button>
                 <button className=" text-gray-400 py-2 px-6">Yearly</button>
             </div>
-            <div className="flex flex-row">
+            <div className="flex flex-wrap justify-center">
                 <PricingCard
                 title="Free"
                 description="Everything you need to supercharge your productivity."
