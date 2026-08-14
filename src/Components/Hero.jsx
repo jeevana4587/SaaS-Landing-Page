@@ -1,4 +1,12 @@
 import { Fragment } from "react";
+import { Star } from 'lucide-react';
+import image1 from "../assets/1.png";
+import image2 from "../assets/2.png";
+import image3 from "../assets/3.png";
+import image4 from "../assets/4.png";
+import image5 from "../assets/5.svg";
+
+
 
 function Hero() {
 
@@ -21,19 +29,25 @@ function Hero() {
 
                 <div className="max-w-7xl mx-auto flex flex-col items-center text-center gap-8 pt-24 ">
                     {/*Badge*/} 
-                    <div className="flex items-center gap-4 bg-[#1a1a1a] px-4 py-2 rounded-full">
+                    <div className=" relative flex items-center gap-4 bg-[#1a1a1a] px-4 py-2 rounded-full overflow-hidden">
+                        <div className="pointer-events-none absolute -left-10 top-1/2 -translate-y-1/2 w-40 h-40 bg-orange-500/30 rounded-full blur-[80px]" />
                       {/* Avatars */}
                       <div className="flex -space-x-2">
-                        <div className="w-8 h-8 rounded-full bg-red-500"></div>
-                        <div className="w-8 h-8 rounded-full bg-green-500"></div>
-                        <div className="w-8 h-8 rounded-full bg-blue-500"></div>
+                        <img src={image1} alt="Avatar 1" className="w-8 h-8 rounded-full object-cover border-2 border-black" />
+                        <img src={image2} alt="Avatar 2" className="w-8 h-8 rounded-full object-cover border-2 border-black" />
+                        <img src={image3} alt="Avatar 3" className="w-8 h-8 rounded-full object-cover border-2 border-black" />
+                        <img src={image4} alt="Avatar 4" className="w-8 h-8 rounded-full object-cover border-2 border-black" />
+                        <img src={image5} alt="Avatar 5" className="w-8 h-8 rounded-full object-cover border-2 border-black" />
 
                       </div>
 
                       {/* Rating */}{/* Happy Clients */}
                       <div className="flex flex-col">
-                          <span className="text-left text-orange-500 text-sm">★★★★★</span>
-                          <span className="text-white text-xs">115+ Happy Clients</span>
+                          <span className="flex gap-1 text-left ">
+                            {[...Array(5)].map((_, i) => (
+                                  <Star key={i} size={15} className="fill-orange-500 text-orange-500" />
+                                   ))}</span>
+                          <span className="text-white text-sm">115+ Happy Clients</span>
                       </div>
 
                       

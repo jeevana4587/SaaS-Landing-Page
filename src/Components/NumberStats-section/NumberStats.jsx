@@ -16,7 +16,7 @@ function NumberStats() {
                     And the results? The numbers speak for themselves:
                     </p>
                {/*StatCards*/}
-               <div className="flex justify-between items-start w-full">
+               <div className="flex flex-wrap justify-between items-start w-full gap-x-2 gap-y-8">
                   <div className="w-64">
                       <StatCard
                       number="2014"
@@ -25,7 +25,7 @@ function NumberStats() {
                       avatars={[image1,image2, image3]}
                       />
                     </div>
-                    <div className="w-64 mt-32">
+                    <div className="w-64 md:mt-32">
                       <StatCard
                       number="304"
                       title="Projects are launched"
@@ -41,7 +41,7 @@ function NumberStats() {
                       avatars={[image1,image2, image3]}
                       />
                     </div>
-                    <div className="w-64 mt-32">
+                    <div className="w-64 md:mt-32">
                       <StatCard
                       number="12"
                       title="Projects in work"
@@ -54,7 +54,10 @@ function NumberStats() {
                 <div className="flex gap-6 mt-32">
                     <button className="bg-orange-500 text-white text-lg py-3 px-7 rounded-lg">Get Started</button>
 
-                    <button className="text-gray-400 py-2 px-7 hover:font-orange-500">Slots are available</button>
+                    <div className="flex items-center gap-2 ">
+                    <span className="text-gray-400  hover:font-orange-500">Slots are available</span>
+                    <span className=" inline-block rounded-full w-2 h-2 fill-green-500 bg-green-500"></span>
+                    </div>
                 </div>
 
 
