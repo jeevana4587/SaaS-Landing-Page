@@ -4,7 +4,7 @@ function Pricing() {
     return (
         <section className="min-h-screen bg-black py-16">
         <div className="max-w-7xl mx-auto flex flex-col items-center text-center gap-8  ">
-            <h1 className="text-7xl text-white font-bold leading-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white font-bold leading-tight">
                 <span>Choose the Plan</span>
                 <br />
                 <span>That's Right for You</span>
@@ -16,7 +16,7 @@ function Pricing() {
                 <button className="bg-zinc-600 rounded-full text-white py-2 px-6">Monthly</button>
                 <button className=" text-gray-400 py-2 px-6">Yearly</button>
             </div>
-            <div className="flex flex-wrap justify-center">
+            <div className="flex flex-wrap justify-center items-center gap-6">
                 <PricingCard
                 title="Free"
                 description="Everything you need to supercharge your productivity."
@@ -28,6 +28,7 @@ function Pricing() {
                 />
                 <PricingCard
                 title="Pro"
+                discount="-20%"
                 description="Unlock a new level of your personal productivity."
                 price="17"
                 features={["Everything in Free",
@@ -42,6 +43,7 @@ function Pricing() {
                 />
                 <PricingCard
                 title="Team"
+                discount="-20%"
                 description="Everything you need to supercharge your productivity."
                 price="37"
                 features={["Everything in Free",
