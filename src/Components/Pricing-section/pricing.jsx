@@ -3,7 +3,7 @@ import PricingCard from "./PricingCard.jsx";
 function Pricing() {
     return (
         <section className="min-h-screen bg-black py-16">
-        <div className="max-w-7xl mx-auto flex flex-col items-center text-center gap-8  ">
+        <div className="max-w-7xl mx-auto flex flex-col items-center text-center gap-8 px-6 ">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white font-bold leading-tight">
                 <span>Choose the Plan</span>
                 <br />

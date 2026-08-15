@@ -7,7 +7,7 @@ function FAQItem({question, answer}){
     return (
         <div className="flex flex-col ">
         <div className="flex justify-between items-start gap-4 " onClick={() => setIsOpen(!isOpen)}>
-            <p className="text-white font-medium">{question}</p>
+            <p className="text-white font-medium text-left">{question}</p>
             <ChevronDown 
             size={20}
             strokeWidth={1.8}
