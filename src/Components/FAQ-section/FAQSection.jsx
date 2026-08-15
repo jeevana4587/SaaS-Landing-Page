@@ -3,7 +3,7 @@ import FAQItem from "./FAQItem.jsx";
 function FAQSection(){
     return (
         <section className="min-h-screen bg-black">
-            <div className="max-w-7xl mx-auto flex flex-col items-center text-center gap-8 pt-24 ">
+            <div className="max-w-7xl mx-auto flex flex-col items-center text-center gap-8 pt-24 px-6 ">
                 <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white font-bold leading-tight">
                     <span>Frequently Asked </span>
                     <br />
