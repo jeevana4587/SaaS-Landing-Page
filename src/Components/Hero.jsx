@@ -27,7 +27,7 @@ function Hero() {
         return(
             <section className="min-h-screen bg-black">
 
-                <div className="max-w-7xl mx-auto flex flex-col items-center text-center gap-8 pt-24 ">
+                <div className="max-w-7xl mx-auto flex flex-col items-center text-center gap-8 pt-24 px-6">
                     {/*Badge*/} 
                     <div className=" relative flex items-center gap-4 bg-[#1a1a1a] px-4 py-2 rounded-full overflow-hidden">
                         <div className="pointer-events-none absolute -left-10 top-1/2 -translate-y-1/2 w-40 h-40 bg-orange-500/30 rounded-full blur-[80px]" />
@@ -54,7 +54,7 @@ function Hero() {
                     </div>
 
                     {/*Heading*/ }
-                    <h1 className="text-7xl text-white font-bold leading-tight">
+                    <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white font-bold leading-tight">
                         <span>Automate </span>
                     
                         <span className="text-orange-500">
@@ -82,12 +82,12 @@ function Hero() {
                     </div>
                     <div className="border-y-2 border-zinc-900 mt-20"  >
                     {/*Stats*/}
-                    <div className="flex w-full max-w-7xl mx-auto py-8 ">
+                    <div className="flex w-full max-w-7xl mx-auto py-8 px-4">
                         {stats.map((stat,index) =>(
                             <Fragment key={stat.label}>
-                            <div className={` flex flex-1 flex-col items-center px-8 `}>
-                                <p className="text-orange-500 text-lg">{stat.label}</p>
-                                <h2 className="text-white text-5xl font-medium mt-2">{stat.number}</h2>
+                            <div className={` flex flex-1 flex-col items-center px-2 sm:px-8`}>
+                                <p className="text-orange-500 text-sm sm:text-lg">{stat.label}</p>
+                                <h2 className="text-white text-3xl sm:text-4xl md:text-5xl font-medium mt-2">{stat.number}</h2>
 
                             </div>
                             {index !== stats.length - 1 && (
