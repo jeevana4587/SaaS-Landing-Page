@@ -8,6 +8,7 @@ import image5 from "../assets/5.svg";
 
 
 
+
 function Hero() {
 
     const stats=[
@@ -25,7 +26,9 @@ function Hero() {
         },
     ];
         return(
-            <section className="min-h-screen bg-black">
+            <section className=" min-h-screen overflow-hidden">
+               
+
 
                 <div className="max-w-7xl mx-auto flex flex-col items-center text-center gap-8 pt-24 px-6">
                     {/*Badge*/} 

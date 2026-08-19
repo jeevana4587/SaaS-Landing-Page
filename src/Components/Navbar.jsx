@@ -6,7 +6,7 @@ function Navbar( ) {
     const [open, setOpen] = useState(false);
 
     return (
-        <nav className="relative flex items-center justify-between w-full py-8 px-6 sm:px-10 lg:px-16 bg-black">
+        <nav className="relative flex items-center justify-between w-full py-8 px-6 sm:px-10 lg:px-16">
            <div>
              <img src={Logo} alt="Wireframe" className="w-full max-w-xs lg:max-w-sm px-8 lg:px-0"/>
             </div> 
