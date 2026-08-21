@@ -5,10 +5,10 @@ import image3 from "../../assets/3.png";
 
 function NumberStats() {
     return (
-        <section className=" bg-black py-24">
+        <section className="  py-24">
             <div className="max-w-7xl mx-auto flex flex-col items-center px-6 ">
                {/*paragraph*/}
-               <p className="max-w-xl text-center text-white text-lg font-semibold leading-7 mb-20">
+               <p className="max-w-xl text-left text-white text-lg font-semibold leading-7 mb-20">
                     Whether you're designing for personal projects, creative teams, or
                     large-scale campaigns, our AI-powered platform is built to bring your
                     ideas to life—quickly, beautifully, and intelligently.

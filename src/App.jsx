@@ -9,7 +9,8 @@ import CTASection from './Components/CTASection.jsx';
 import Footer from './Components/Footer.jsx';
 import image85 from "./assets/image 85.png";
 import image87 from "./assets/image 87.png";
-
+import dots from "./assets/dots.png";
+import dots1 from "./assets/dots 1.png";
 
 
 function App() {
@@ -20,20 +21,34 @@ function App() {
         <img
           src={image87}
           alt=""
-          className="pointer-events-none absolute -z-10"
+          className="hidden lg:block pointer-events-none absolute -z-10"
           style={{ width: '667px', height: '985px', left: '0px', top: '-100px', transform: 'rotate(0deg)' }}
         />
         <img
           src={image85}
           alt=""
-          className="pointer-events-none absolute -z-10"
+          className="hidden lg:block pointer-events-none absolute -z-10"
           style={{ width: '774px', height: '985px', right: '-100px', top: '-100px', transform: 'rotate(0deg)' }}
         />
         <Navbar />
         <Hero />
       </div>
+      <div className="relative isolate bg-black overflow-hidden" >
+        <div
+  className="absolute overflow-hidden -z-10 pointer-events-none"
+  style={{
+    width: '1201px',
+    height: '1000px',
+    left: '620px',
+    bottom: '100px',
+    backgroundImage: `url(${dots1})`,
+    opacity: 0.8,
+    transform: 'rotate(20deg)',
+  }}
+/>
       <Features />
       <NumberStats />
+      </div>
       <Pricing />
       <FAQSection />
       <CTASection />

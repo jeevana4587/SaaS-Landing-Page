@@ -1,8 +1,21 @@
 import PricingCard from "./PricingCard.jsx";
+import bg from "../../assets/bg.png";
 
 function Pricing() {
     return (
-        <section className="min-h-screen bg-black py-16">
+        <section className="relative isolate overflow-hidden min-h-screen bg-black py-16">
+           <div
+           className="absolute overflow-hidden -z-10 hidden lg:block pointer-events-none"
+           style={{
+             width: '1319px',
+             height: '925px',
+             left: '10%',
+             bottom: '-20px',
+             backgroundImage: `url(${bg})`,
+            //  tranform: 'translate(-50%, -50%)',
+            
+           }}
+         />   
         <div className="max-w-7xl mx-auto flex flex-col items-center text-center gap-8 px-6 ">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white font-bold leading-tight">
                 <span>Choose the Plan</span>
