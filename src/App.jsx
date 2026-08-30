@@ -49,8 +49,23 @@ function App() {
       <Features />
       <NumberStats />
       </div>
+      <div className='relative isolate bg-black overflow-hidden'>
+        <div
+  className="pointer-events-none absolute -z-10 border-[#FF9777] rotate-90
+             w-[180px] h-[96px] border-[10px] rounded-[90px]
+             sm:w-[280px] sm:h-[150px] sm:border-[15px] sm:rounded-[100px]
+             lg:w-[423px] lg:h-[226px] lg:border-[23px] lg:rounded-[117px]"
+  style={{
+    boxSizing: 'border-box',
+    borderStyle: 'solid',
+    left: '-200px',
+    top: '1350px',
+    
+  }}
+/>
       <Pricing />
       <FAQSection />
+      </div>
       <CTASection />
       <Footer />
     </div>

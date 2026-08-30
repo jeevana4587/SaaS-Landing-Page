@@ -2,8 +2,34 @@ import FAQItem from "./FAQItem.jsx";
 
 function FAQSection(){
     return (
-        <section className="min-h-screen bg-black">
-            <div className="max-w-7xl mx-auto flex flex-col items-center text-center gap-8 pt-24 px-6 ">
+        <section className="min-h-screen ">
+            <div className="max-w-7xl mx-auto flex flex-col items-center text-center gap-8 pt-24 px-6 pb-20 ">
+                <div
+  className="pointer-events-none absolute -z-10
+             w-[180px] h-[180px] border-[10px]
+             sm:w-[280px] sm:h-[280px] sm:border-[15px]
+             lg:w-[445px] lg:h-[445px] lg:border-[23px]"
+  style={{
+    boxSizing: 'border-box',
+    borderStyle: 'solid',
+    borderColor: '#FF541F',
+    borderRadius: '9999px',
+    right: '-300px',
+    top: '1500px',
+  }}
+/>
+
+<div
+  className="pointer-events-none absolute -z-10 border-solid border-[#F6F6F6]
+             w-[260px] h-[92px] border-[10px] rounded-[46px]
+             sm:w-[420px] sm:h-[150px] sm:border-[15px] sm:rounded-[75px]
+             lg:w-[636px] lg:h-[226px] lg:border-[23px] lg:rounded-[117px]"
+  style={{
+    boxSizing: 'border-box',
+    left: '-400px',
+    bottom: '0px',
+  }}
+/>
                 <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white font-bold leading-tight">
                     <span>Frequently Asked </span>
                     <br />
