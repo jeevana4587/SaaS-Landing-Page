@@ -7,7 +7,9 @@ import { Copyright } from 'lucide-react';
 
 function Footer() {
     return (
-        <section className="py-16 bg-black">
+        <section className=" relative isolate overflow-hidden py-16 bg-[#121010] ">
+            
+            <div className="pointer-events-none absolute -z-10 -top-50 -right-60 -translate-x-1/2 w-[500px] h-[150px] bg-[#ef430f]/100 rounded-full blur-[250px] " />
             <div className=" flex flex-col  px-6 sm:px-12 lg:px-32">
                 {/*top*/}
                 <div className="flex flex-col sm:flex-row flex-wrap justify-between gap-8">

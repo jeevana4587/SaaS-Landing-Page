@@ -4,6 +4,19 @@ function FAQSection(){
     return (
         <section className="min-h-screen ">
             <div className="max-w-7xl mx-auto flex flex-col items-center text-center gap-8 pt-24 px-6 pb-20 ">
+            
+     <div
+  className="pointer-events-none absolute -z-10 hidden lg:block border-[#FF9777] rotate-90
+             w-[423px] h-[226px] border-[23px] rounded-[117px]"
+  style={{
+    boxSizing: 'border-box',
+    borderStyle: 'solid',
+    left: '-200px',
+    top: '100px',
+  }}
+/>
+
+
                 <div
   className="pointer-events-none absolute -z-10
              w-[180px] h-[180px] border-[10px]
@@ -15,7 +28,7 @@ function FAQSection(){
     borderColor: '#FF541F',
     borderRadius: '9999px',
     right: '-300px',
-    top: '1500px',
+    top: '400px',
   }}
 />
 
@@ -27,7 +40,7 @@ function FAQSection(){
   style={{
     boxSizing: 'border-box',
     left: '-400px',
-    bottom: '0px',
+    top: '850px',
   }}
 />
                 <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white font-bold leading-tight">

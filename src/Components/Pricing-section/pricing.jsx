@@ -3,7 +3,8 @@ import bg from "../../assets/bg.png";
 
 function Pricing() {
     return (
-        <section className="relative isolate overflow-hidden min-h-screen py-16">
+        <section className="relative isolate overflow-hidden bg-black min-h-screen py-16">
+   
            <div
            className="absolute overflow-hidden -z-10 hidden lg:block pointer-events-none"
            style={{

@@ -9,7 +9,6 @@ import CTASection from './Components/CTASection.jsx';
 import Footer from './Components/Footer.jsx';
 import image85 from "./assets/image 85.png";
 import image87 from "./assets/image 87.png";
-import dots from "./assets/dots.png";
 import dots1 from "./assets/dots 1.png";
 
 
@@ -49,25 +48,56 @@ function App() {
       <Features />
       <NumberStats />
       </div>
+      
+       
+      <Pricing />
+      
       <div className='relative isolate bg-black overflow-hidden'>
         <div
-  className="pointer-events-none absolute -z-10 border-[#FF9777] rotate-90
-             w-[180px] h-[96px] border-[10px] rounded-[90px]
-             sm:w-[280px] sm:h-[150px] sm:border-[15px] sm:rounded-[100px]
-             lg:w-[423px] lg:h-[226px] lg:border-[23px] lg:rounded-[117px]"
+          className="pointer-events-none absolute -z-10 hidden lg:block"
   style={{
-    boxSizing: 'border-box',
-    borderStyle: 'solid',
-    left: '-200px',
-    top: '1350px',
-    
+    width: '1100px',
+    height: '1000px',
+    right: '-350px',
+    top: '600px',
+    background: 'conic-gradient(from 180deg at 50% 50%, #FB1E1E 0deg, #FA5424 84.77deg, #C22C00 183.8deg, #982300 271.91deg, #FB1E1E 360deg)',
+    filter: 'blur(200px)',
+    opacity: 0.26,
+  }}
+        />
+
+
+        <div
+  className="pointer-events-none absolute -z-10 hidden lg:block"
+  style={{
+    width: '1150px',
+    height: '46px',
+    right: '-400px',
+    top: '500px',
+    transform: 'rotate(42deg)',
+    transformOrigin: 'left',
+    background: 'linear-gradient(to right, transparent, rgba(255, 255, 255, 0.13), transparent)',
   }}
 />
-      <Pricing />
+<div
+  className="pointer-events-none absolute -z-10 hidden lg:block"
+  style={{
+    width: '1410px',
+    height: '46px',
+    right: '-380px',
+    top: '380px',
+    transform: 'rotate(42deg)',
+    transformOrigin: 'left',
+    background: 'linear-gradient(to right, transparent, rgba(255, 255, 255, 0.12), transparent)',
+  }}
+/>
+
       <FAQSection />
-      </div>
+      
       <CTASection />
+      
       <Footer />
+      </div>
     </div>
    );
 }
