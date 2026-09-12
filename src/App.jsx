@@ -9,7 +9,7 @@ import CTASection from './Components/CTASection.jsx';
 import Footer from './Components/Footer.jsx';
 import image85 from "./assets/image 85.png";
 import image87 from "./assets/image 87.png";
-import dots1 from "./assets/dots 1.png";
+import dots1 from "./assets/Dots 1.png";
 
 
 function App() {
